@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "JournalEntry",
+  "type": "object",
+  "required": [
+    "documentId",
+    "companyCode",
+    "postingDate",
+    "glAccount",
+    "amountLC",
+    "localCurrency"
+  ],
+  "properties": {
+    "documentId": {
+      "type": "string"
+    },
+    "companyCode": {
+      "type": "string"
+    },
+    "postingDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "documentDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "glAccount": {
+      "type": "string"
+    },
+    "costCentre": {
+      "type": "string"
+    },
+    "profitCentre": {
+      "type": "string"
+    },
+    "amountLC": {
+      "type": "number"
+    },
+    "amountTC": {
+      "type": "number"
+    },
+    "localCurrency": {
+      "type": "string"
+    },
+    "transactionCurrency": {
+      "type": "string"
+    },
+    "fiscalPeriod": {
+      "type": "integer"
+    },
+    "fiscalYear": {
+      "type": "integer"
+    },
+    "documentType": {
+      "type": "string"
+    },
+    "headerText": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

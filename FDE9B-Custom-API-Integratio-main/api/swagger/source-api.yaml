@@ -1,0 +1,56 @@
+openapi: 3.0.3
+
+info:
+  title: SAP General Ledger API
+  version: 1.0.0
+  description: API specification for retrieving General Ledger data from SAP S/4HANA.
+
+servers:
+  - url: https://api.company.com
+
+paths:
+  /api/v1/general-ledger:
+    get:
+      summary: Retrieve General Ledger Entries
+      operationId: getGeneralLedger
+      parameters:
+        - name: companyCode
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: fromDate
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+        - name: toDate
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Successful Response
+        "400":
+          description: Invalid Request
+        "401":
+          description: Unauthorized
+        "404":
+          description: Resource Not Found
+        "500":
+          description: Internal Server Error
+
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://auth.company.com/oauth/token
+          scopes: {}
+
+security:
+  - OAuth2: []

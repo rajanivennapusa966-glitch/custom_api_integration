@@ -1,0 +1,10 @@
+| SAP Field      | FinSight Field | Data Type | Required | Transformation | Validation  |
+| -------------- | -------------- | --------- | -------- | -------------- | ----------- |
+| Purchase Order | purchaseOrder  | String    | Yes      | Direct         | Unique      |
+| Vendor         | vendorName     | String    | Yes      | Trim           | Mandatory   |
+| Company Code   | companyCode    | String    | Yes      | Direct         | Exists      |
+| Order Date     | orderDate      | Date      | Yes      | YYYY-MM-DD     | Valid Date  |
+| Currency       | currency       | String    | Yes      | ISO 4217       | Currency    |
+| Net Amount     | amount         | Decimal   | Yes      | Round(2)       | Positive    |
+| Status         | status         | String    | Yes      | Uppercase      | OPEN/CLOSED |
+| Plant          | plant          | String    | Yes      | Direct         | Exists      |

@@ -1,0 +1,5 @@
+| Run Date   | Interface           | Source Records | Destination Records | Record Difference | Source Amount | Destination Amount | Amount Difference | Status  | Remarks            |
+| ---------- | ------------------- | -------------: | ------------------: | ----------------: | ------------: | -----------------: | ----------------: | ------- | ------------------ |
+| 2026-06-01 | General Ledger      |            250 |                 250 |                 0 |     2,500,000 |          2,500,000 |                 0 | Success | Reconciled         |
+| 2026-06-01 | Accounts Payable    |            180 |                 180 |                 0 |       950,000 |            950,000 |                 0 | Success | Reconciled         |
+| 2026-06-01 | Accounts Receivable |            210 |                 209 |                 1 |     1,150,000 |          1,145,000 |             5,000 | Failed  | One missing record |

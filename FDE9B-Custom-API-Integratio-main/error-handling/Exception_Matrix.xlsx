@@ -1,0 +1,10 @@
+| Error Code | Error Description            | Severity | Retry         | Action              | Notification     | Resolution            |
+| ---------- | ---------------------------- | -------- | ------------- | ------------------- | ---------------- | --------------------- |
+| ERR001     | Invalid Company Code         | High     | No            | Reject Request      | Finance Team     | Correct Master Data   |
+| ERR002     | Missing Mandatory Field      | High     | No            | Reject Request      | Integration Team | Update Payload        |
+| ERR003     | Invalid Date Format          | Medium   | No            | Reject Request      | Integration Team | Correct Date          |
+| ERR004     | Authentication Failed        | Critical | Refresh Token | Retry               | Security Team    | Renew Credentials     |
+| ERR005     | HTTP 503 Service Unavailable | Critical | Yes           | Retry               | Operations Team  | Monitor Service       |
+| ERR006     | Connection Timeout           | Medium   | Yes           | Retry               | Operations Team  | Check Network         |
+| ERR007     | Duplicate Journal Entry      | Medium   | No            | Ignore              | Finance Team     | Idempotent Processing |
+| ERR008     | Rate Limit Exceeded          | Medium   | Yes           | Exponential Backoff | Operations Team  | Reduce Request Rate   |

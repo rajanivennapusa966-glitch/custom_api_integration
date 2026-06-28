@@ -1,0 +1,12 @@
+| SAP Field      | FinSight Field | Data Type | Required | Transformation | Validation                 |
+| -------------- | -------------- | --------- | -------- | -------------- | -------------------------- |
+| Vendor Number  | vendorId       | String    | Yes      | Direct         | Mandatory                  |
+| Vendor Name    | vendorName     | String    | Yes      | Trim Spaces    | Mandatory                  |
+| Company Code   | companyCode    | String    | Yes      | Direct         | Valid Company Code         |
+| Invoice Number | invoiceId      | String    | Yes      | Direct         | Unique                     |
+| Invoice Date   | invoiceDate    | Date      | Yes      | YYYY-MM-DD     | Valid Date                 |
+| Due Date       | dueDate        | Date      | Yes      | YYYY-MM-DD     | Due ≥ Invoice Date         |
+| Currency       | currency       | String    | Yes      | ISO 4217       | Currency Code              |
+| Invoice Amount | invoiceAmount  | Decimal   | Yes      | Round(2)       | Positive                   |
+| Paid Amount    | paidAmount     | Decimal   | No       | Round(2)       | ≥ 0                        |
+| Balance Amount | balanceAmount  | Decimal   | Yes      | Calculated     | invoiceAmount − paidAmount |

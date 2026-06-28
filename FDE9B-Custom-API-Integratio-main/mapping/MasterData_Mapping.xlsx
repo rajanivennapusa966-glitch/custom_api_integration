@@ -1,0 +1,10 @@
+| SAP Field            | FinSight Field      | Data Type | Required | Transformation | Validation   |
+| -------------------- | ------------------- | --------- | -------- | -------------- | ------------ |
+| Cost Center          | costCenter          | String    | Yes      | Direct         | Exists       |
+| Profit Center        | profitCenter        | String    | Yes      | Direct         | Exists       |
+| Material             | materialCode        | String    | Yes      | Trim           | Exists       |
+| Material Description | materialDescription | String    | No       | Trim           | Length ≤ 255 |
+| Asset Number         | assetNumber         | String    | Yes      | Direct         | Exists       |
+| Budget ID            | budgetId            | String    | Yes      | Direct         | Unique       |
+| Plant                | plant               | String    | Yes      | Direct         | Exists       |
+| Storage Location     | storageLocation     | String    | No       | Direct         | Exists       |

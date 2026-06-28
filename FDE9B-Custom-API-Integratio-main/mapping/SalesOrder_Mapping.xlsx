@@ -1,0 +1,10 @@
+| SAP Field          | FinSight Field | Data Type | Required | Transformation | Validation  |
+| ------------------ | -------------- | --------- | -------- | -------------- | ----------- |
+| Sales Order        | salesOrder     | String    | Yes      | Direct         | Unique      |
+| Customer           | customerName   | String    | Yes      | Trim           | Mandatory   |
+| Company Code       | companyCode    | String    | Yes      | Direct         | Exists      |
+| Order Date         | orderDate      | Date      | Yes      | YYYY-MM-DD     | Valid Date  |
+| Currency           | currency       | String    | Yes      | ISO 4217       | Currency    |
+| Order Amount       | amount         | Decimal   | Yes      | Round(2)       | Positive    |
+| Status             | status         | String    | Yes      | Uppercase      | OPEN/CLOSED |
+| Sales Organization | salesOrg       | String    | Yes      | Direct         | Exists      |

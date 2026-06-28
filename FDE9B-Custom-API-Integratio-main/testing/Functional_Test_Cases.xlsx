@@ -1,0 +1,8 @@
+| Test ID | Test Scenario                | Preconditions        | Test Steps  | Expected Result            | Actual Result | Status |
+| ------- | ---------------------------- | -------------------- | ----------- | -------------------------- | ------------- | ------ |
+| FT001   | Retrieve General Ledger      | Valid OAuth Token    | Call GL API | Journal entries returned   | As Expected   | Pass   |
+| FT002   | Retrieve Accounts Payable    | Valid OAuth Token    | Call AP API | Vendor invoices returned   | As Expected   | Pass   |
+| FT003   | Retrieve Accounts Receivable | Valid OAuth Token    | Call AR API | Customer invoices returned | As Expected   | Pass   |
+| FT004   | Invalid Company Code         | Invalid Company Code | Execute API | HTTP 400 Returned          | As Expected   | Pass   |
+| FT005   | Missing Authentication       | No Token             | Execute API | HTTP 401 Returned          | As Expected   | Pass   |
+| FT006   | Invalid Date Range           | From Date > To Date  | Execute API | Validation Error           | As Expected   | Pass   |

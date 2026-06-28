@@ -1,0 +1,18 @@
+{
+  "documentId": "1000-2026-123456",
+  "companyCode": "1000",
+  "postingDate": "2026-01-15",
+  "documentDate": "2026-01-14",
+  "glAccount": "400001",
+  "costCentre": "CC100",
+  "profitCentre": "PC200",
+  "amountLC": 25000.50,
+  "amountTC": 25000.50,
+  "localCurrency": "INR",
+  "transactionCurrency": "INR",
+  "fiscalPeriod": 1,
+  "fiscalYear": 2026,
+  "documentType": "SA",
+  "headerText": "Monthly Sales Posting",
+  "status": "POSTED"
+}

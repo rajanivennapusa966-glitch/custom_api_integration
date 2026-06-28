@@ -1,0 +1,14 @@
+| Slide | Title                 | Contents                                       |
+| ----: | --------------------- | ---------------------------------------------- |
+|     1 | Project Title         | Project name, your name, course, date          |
+|     2 | Business Problem      | Why SAP–FinSight integration is needed         |
+|     3 | Project Objectives    | Goals and expected outcomes                    |
+|     4 | Solution Architecture | High-level architecture diagram                |
+|     5 | API Design            | Source and destination APIs                    |
+|     6 | Data Mapping          | Sample mapping table                           |
+|     7 | Error Handling        | Retry, logging, DLQ, circuit breaker           |
+|     8 | Reconciliation        | Framework and process                          |
+|     9 | Monitoring            | KPIs, alerts, dashboard                        |
+|    10 | Testing               | Functional, performance, security, UAT         |
+|    11 | Deployment            | Deployment and rollback plan                   |
+|    12 | Conclusion            | Benefits, lessons learned, future improvements |
